@@ -72,3 +72,19 @@ h2 {
 .account-item {
   margin: 10px 0;
 }
+
+.account-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-service {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.account-username {
+  font-style: italic;
+  color: #a9a9a9;
+}

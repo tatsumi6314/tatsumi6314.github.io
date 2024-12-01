@@ -21,7 +21,7 @@ const PortfolioItem = ({ url, title, language, library, platform }) => (
   </li>
 );
 
-const AccountItem = ({ url, title }) => (
+const AccountItem = ({ url, service, username }) => (
   <li className="account-item">
     <a
       className="App-link"
@@ -29,7 +29,10 @@ const AccountItem = ({ url, title }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      {title}
+      <div className="account-content">
+        <span className="account-service">{service}</span>
+        <span className="account-username">{username}</span>
+      </div>
     </a>
   </li>
 );
@@ -61,7 +64,7 @@ const App = () => {
           <ul>
             <PortfolioItem
               url="https://play.google.com/store/apps/details?id=com.sketch_map&hl=ja"
-              title="SketchMap"
+              title="Sketch Map"
               language="Dart"
               library="Flutter"
               platform="Android"
@@ -73,7 +76,13 @@ const App = () => {
           <ul>
             <AccountItem
               url="https://github.com/tatsumi6314"
-              title="tatsumi6314's GitHub"
+              service="GitHub"
+              username="tatsumi6314"
+            />
+            <AccountItem
+              url="https://www.linkedin.com/in/tatsumi-oikawa-44a77414a/"
+              service="LinkedIn"
+              username="Tatsumi Oikawa"
             />
           </ul>
         </section>
