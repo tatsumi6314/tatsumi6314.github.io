@@ -64,7 +64,7 @@ const App = () => {
           <ul>
             <PortfolioItem
               url="https://play.google.com/store/apps/details?id=com.sketch_map&hl=ja"
-              title="Sketch Map"
+              title="SketchMap"
               language="Dart"
               library="Flutter"
               platform="Android"
