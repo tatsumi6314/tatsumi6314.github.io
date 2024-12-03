@@ -71,7 +71,7 @@ const App = () => {
             />
           </ul>
         </section>
-        <h1>Account</h1>
+        <h1>Accounts</h1>
         <section>
           <ul>
             <AccountItem
