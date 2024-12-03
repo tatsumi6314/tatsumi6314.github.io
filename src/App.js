@@ -41,7 +41,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>My Portfolio</h1>
+        <h1>Portfolios</h1>
         <section>
           <h2>Web Projects</h2>
           <ul>
