@@ -75,14 +75,19 @@ const App = () => {
         <section>
           <ul>
             <AccountItem
+              url="https://www.linkedin.com/in/tatsumi-oikawa-44a77414a/"
+              service="LinkedIn"
+              username="Tatsumi Oikawa"
+            />
+            <AccountItem
               url="https://github.com/tatsumi6314"
               service="GitHub"
               username="tatsumi6314"
             />
             <AccountItem
-              url="https://www.linkedin.com/in/tatsumi-oikawa-44a77414a/"
-              service="LinkedIn"
-              username="Tatsumi Oikawa"
+              url="https://qiita.com/tatsumi6314"
+              service="Qiita"
+              username="tatsumi6314"
             />
           </ul>
         </section>
