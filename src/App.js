@@ -76,6 +76,13 @@ const App = () => {
               library="Flutter"
               platform="Android"
             />
+            <PortfolioItem
+              url="https://apps.apple.com/jp/app/kokokara/id6740821050"
+              title="Kokokara"
+              language="Dart"
+              library="Flutter"
+              platform="iOS"
+            />
           </ul>
         </section>
         <h1>Accounts</h1>
