@@ -83,6 +83,13 @@ const App = () => {
               library="Flutter"
               platform="iOS"
             />
+            <PortfolioItem
+              url="https://play.google.com/store/apps/details?id=com.kokokara&hl=ja"
+              title="Kokokara"
+              language="Dart"
+              library="Flutter"
+              platform="Android"
+            />
           </ul>
         </section>
         <h1>Accounts</h1>
