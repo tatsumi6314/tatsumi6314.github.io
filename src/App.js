@@ -1,118 +1,126 @@
 import React from "react";
 import "./App.css";
-
-const PortfolioItem = ({ url, title, language, library, platform }) => (
-  <li className="portfolio-item">
-    <a
-      className="App-link"
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="portfolio-content">
-        <div className="portfolio-title">{title}</div>
-        <div className="portfolio-details">
-          <span className="portfolio-language">{language}</span>
-          <span className="portfolio-library">{library}</span>
-          {platform && <span className="portfolio-platform">{platform}</span>}
-        </div>
-      </div>
-    </a>
-  </li>
-);
-
-const AccountItem = ({ url, service, username }) => (
-  <li className="account-item">
-    <a
-      className="App-link"
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="account-content">
-        <span className="account-service">{service}</span>
-        <span className="account-username">{username}</span>
-      </div>
-    </a>
-  </li>
-);
+import qiitaIcon from "./image/qiita-white-icon.png"; // 画像をインポート
+import profileImage from "./image/profile.png"; // 追加: プロフィール写真をインポート
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Portfolios</h1>
-        <section>
-          <h2>Web Projects</h2>
+      <section className="profile-section">
+        <img
+          src={profileImage} // 変更: 仮のプロフィール写真をprofile.pngに変更
+          alt="Tatsumi Oikawa"
+          className="profile-picture"
+        />
+        <h2>Tatsumi Oikawa (翁川 竜海)</h2>
+        <h3>Portfolios</h3>
+      </section>
+      <div className="projects-section">
+        <div className="projects-category">
+          <h4>Web Projects</h4>
           <ul>
-            <PortfolioItem
-              url="https://www.speedqueen-cl.com/"
-              title="Speed Queen"
-              language="Typescript"
-              library="React"
-            />
-            <PortfolioItem
-              url="https://naachan-journey.com"
-              title="Naachan Journey"
-              language="PHP"
-              library="WordPress"
-            />
+            <li>
+              <a
+                href="https://www.speedqueen-cl.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="App-link"
+              >
+                <span className="project-title">Speed Queen</span>
+                <span className="project-tag">TypeScript React</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://naachan-journey.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="App-link"
+              >
+                <span className="project-title">Naachan Journey</span>
+                <span className="project-tag">PHP WordPress</span>
+              </a>
+            </li>
           </ul>
-        </section>
-        <section>
-          <h2>Mobile Projects</h2>
+        </div>
+        <div className="projects-category">
+          <h4>Mobile Projects</h4>
           <ul>
-            <PortfolioItem
-              url="https://apps.apple.com/jp/app/sketchmap/id6738701125"
-              title="SketchMap"
-              language="Dart"
-              library="Flutter"
-              platform="iOS"
-            />
-            <PortfolioItem
-              url="https://play.google.com/store/apps/details?id=com.sketch_map&hl=ja"
-              title="SketchMap"
-              language="Dart"
-              library="Flutter"
-              platform="Android"
-            />
-            <PortfolioItem
-              url="https://apps.apple.com/jp/app/kokokara/id6740821050"
-              title="Kokokara"
-              language="Dart"
-              library="Flutter"
-              platform="iOS"
-            />
-            <PortfolioItem
-              url="https://play.google.com/store/apps/details?id=com.kokokara&hl=ja"
-              title="Kokokara"
-              language="Dart"
-              library="Flutter"
-              platform="Android"
-            />
+            <li>
+              <a
+                href="https://apps.apple.com/jp/app/sketchmap/id6738701125"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="App-link"
+              >
+                <span className="project-title">SketchMap</span>
+                <span className="project-tag">Dart Flutter iOS</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.sketch_map&hl=ja"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="App-link"
+              >
+                <span className="project-title">SketchMap</span>
+                <span className="project-tag">Dart Flutter Android</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://apps.apple.com/jp/app/kokokara/id6740821050"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="App-link"
+              >
+                <span className="project-title">Kokokara</span>
+                <span className="project-tag">Dart Flutter iOS</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.kokokara&hl=ja"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="App-link"
+              >
+                <span className="project-title">Kokokara</span>
+                <span className="project-tag">Dart Flutter Android</span>
+              </a>
+            </li>
           </ul>
-        </section>
-        <h1>Accounts</h1>
-        <section>
-          <ul>
-            <AccountItem
-              url="https://www.linkedin.com/in/tatsumi-oikawa-44a77414a/"
-              service="LinkedIn"
-              username="Tatsumi Oikawa"
-            />
-            <AccountItem
-              url="https://github.com/tatsumi6314"
-              service="GitHub"
-              username="tatsumi6314"
-            />
-            <AccountItem
-              url="https://qiita.com/tatsumi6314"
-              service="Qiita"
-              username="tatsumi6314"
-            />
-          </ul>
-        </section>
-      </header>
+        </div>
+      </div>
+      <div className="accounts-section">
+        <a
+          href="https://www.linkedin.com/in/tatsumi-oikawa-44a77414a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/tatsumi6314"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github"></i>
+        </a>
+        <a
+          href="https://qiita.com/tatsumi6314"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={qiitaIcon} // インポートした画像を利用
+            alt="Qiita"
+            className="qiita-icon"
+            style={{ width: "48px", height: "48px" }} // 変更: アイコンサイズを48pxに戻す
+          />
+        </a>
+      </div>
     </div>
   );
 };
