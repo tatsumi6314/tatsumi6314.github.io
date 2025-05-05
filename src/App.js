@@ -12,7 +12,11 @@ const App = () => {
           alt="Tatsumi Oikawa"
           className="profile-picture"
         />
-        <h2>Tatsumi Oikawa (翁川 竜海)</h2>
+        <h2>
+          <span className="latin-name">Tatsumi Oikawa</span>
+          <span className="name-separator"> / </span>
+          <span className="kanji-name">翁川 竜海</span>
+        </h2>
         <h3>Portfolios</h3>
       </section>
       <div className="projects-section">
