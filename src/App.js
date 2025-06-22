@@ -136,6 +136,49 @@ const App = () => {
                 </div>
               </div>
             </li>
+            <li>
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                  gap: "8px",
+                  width: "100%",
+                }}
+              >
+                <span className="project-title">シンプル当番表</span>
+                <span className="project-tag">Dart Flutter</span>
+                <div
+                  className="store-links"
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    ...(window.innerWidth <= 600
+                      ? { width: "100%", marginTop: "4px", flexBasis: "100%" }
+                      : {}),
+                  }}
+                >
+                  <a
+                    href="https://apps.apple.com/jp/app/%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E5%BD%93%E7%95%AA%E8%A1%A8/id6747189273"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="App-link"
+                    style={{ minWidth: "56px" }}
+                  >
+                    iOS
+                  </a>
+                  {/* <a
+                    href="https://play.google.com/store/apps/details?id=com.kokokara&hl=ja"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="App-link"
+                    style={{ minWidth: "72px" }}
+                  >
+                    Android
+                  </a> */}
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
