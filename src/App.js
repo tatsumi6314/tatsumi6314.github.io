@@ -51,48 +51,90 @@ const App = () => {
           <h4>Mobile Projects</h4>
           <ul>
             <li>
-              <a
-                href="https://apps.apple.com/jp/app/sketchmap/id6738701125"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="App-link"
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                  gap: "8px",
+                  width: "100%",
+                }}
               >
                 <span className="project-title">SketchMap</span>
-                <span className="project-tag">Dart Flutter iOS</span>
-              </a>
+                <span className="project-tag">Dart Flutter</span>
+                <div
+                  className="store-links"
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    ...(window.innerWidth <= 600
+                      ? { width: "100%", marginTop: "4px", flexBasis: "100%" }
+                      : {}),
+                  }}
+                >
+                  <a
+                    href="https://apps.apple.com/jp/app/sketchmap/id6738701125"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="App-link"
+                    style={{ minWidth: "56px" }}
+                  >
+                    iOS
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.sketch_map&hl=ja"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="App-link"
+                    style={{ minWidth: "72px" }}
+                  >
+                    Android
+                  </a>
+                </div>
+              </div>
             </li>
             <li>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.sketch_map&hl=ja"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="App-link"
-              >
-                <span className="project-title">SketchMap</span>
-                <span className="project-tag">Dart Flutter Android</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://apps.apple.com/jp/app/kokokara/id6740821050"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="App-link"
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                  gap: "8px",
+                  width: "100%",
+                }}
               >
                 <span className="project-title">Kokokara</span>
-                <span className="project-tag">Dart Flutter iOS</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.kokokara&hl=ja"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="App-link"
-              >
-                <span className="project-title">Kokokara</span>
-                <span className="project-tag">Dart Flutter Android</span>
-              </a>
+                <span className="project-tag">Dart Flutter</span>
+                <div
+                  className="store-links"
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    ...(window.innerWidth <= 600
+                      ? { width: "100%", marginTop: "4px", flexBasis: "100%" }
+                      : {}),
+                  }}
+                >
+                  <a
+                    href="https://apps.apple.com/jp/app/kokokara/id6740821050"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="App-link"
+                    style={{ minWidth: "56px" }}
+                  >
+                    iOS
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.kokokara&hl=ja"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="App-link"
+                    style={{ minWidth: "72px" }}
+                  >
+                    Android
+                  </a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
