@@ -167,15 +167,15 @@ const App = () => {
                   >
                     iOS
                   </a>
-                  {/* <a
-                    href="https://play.google.com/store/apps/details?id=com.kokokara&hl=ja"
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.simpledutyroster&hl=ja"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="App-link"
                     style={{ minWidth: "72px" }}
                   >
                     Android
-                  </a> */}
+                  </a>
                 </div>
               </div>
             </li>
