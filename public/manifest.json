@@ -1,10 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tatsumi Oikawa",
+  "name": "翁川 竜海 (Tatsumi Oikawa) | ポートフォリオ",
   "icons": [
+    {
+      "src": "seahorse.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0b1120",
+  "background_color": "#0b1120"
 }

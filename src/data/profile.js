@@ -6,4 +6,5 @@ export const profile = {
   latinName: "Tatsumi Oikawa",
   kanjiName: "翁川 竜海",
   title: "Portfolios",
+  bio: "Web・モバイルアプリを開発するソフトウェアエンジニアです。TypeScript / React / Flutter を中心に、幅広い開発に携わっています。",
 };

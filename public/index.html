@@ -6,9 +6,71 @@
   <link rel="icon" href="%PUBLIC_URL%/seahorse.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b1120" />
-  <meta name="description" content="翁川竜海のポートフォリオサイトです。制作したアプリケーションやWeb開発・プログラミングの実績を掲載しています。" />
-  <meta name="keywords" content="翁川竜海,翁川 竜海,tatsumi oikawa,Tatsumi Oikawa,tatsumi,Tatsumi,oikawa,Oikawa" />
+
+  <!-- 基本SEO -->
+  <title>翁川 竜海 (Tatsumi Oikawa) | ポートフォリオ</title>
+  <meta name="description"
+    content="翁川竜海(Tatsumi Oikawa)のポートフォリオサイト。TypeScript/ReactによるWebアプリ開発や、Flutterで開発したSketchMap・Kokokara・シンプル当番表などのモバイルアプリを紹介しています。" />
+  <meta name="author" content="翁川 竜海" />
+  <link rel="canonical" href="https://tatsumi6314.github.io/" />
   <meta name="google-site-verification" content="mjl6AnEukFsKEOFWPXyRR_ha38UkvTw9hz18NTxdD0w" />
+
+  <!-- OGP (SNS・チャットでの共有時に表示される情報) -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://tatsumi6314.github.io/" />
+  <meta property="og:title" content="翁川 竜海 (Tatsumi Oikawa) | ポートフォリオ" />
+  <meta property="og:description"
+    content="翁川竜海(Tatsumi Oikawa)のポートフォリオサイト。Webアプリ・モバイルアプリの開発実績を紹介しています。" />
+  <meta property="og:image" content="https://tatsumi6314.github.io/ogp.png" />
+  <meta property="og:site_name" content="翁川 竜海のポートフォリオ" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="翁川 竜海 (Tatsumi Oikawa) | ポートフォリオ" />
+  <meta name="twitter:description"
+    content="翁川竜海(Tatsumi Oikawa)のポートフォリオサイト。Webアプリ・モバイルアプリの開発実績を紹介しています。" />
+  <meta name="twitter:image" content="https://tatsumi6314.github.io/ogp.png" />
+
+  <!-- 構造化データ: Googleに「誰のどんなサイトか」を伝える -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://tatsumi6314.github.io/#person",
+          "name": "翁川 竜海",
+          "alternateName": ["Tatsumi Oikawa", "おいかわ たつみ"],
+          "url": "https://tatsumi6314.github.io/",
+          "image": "https://tatsumi6314.github.io/ogp.png",
+          "jobTitle": "ソフトウェアエンジニア",
+          "description": "Webアプリ・モバイルアプリを開発するソフトウェアエンジニア",
+          "knowsAbout": ["TypeScript", "React", "Dart", "Flutter", "PHP", "WordPress"],
+          "sameAs": [
+            "https://github.com/tatsumi6314",
+            "https://qiita.com/tatsumi6314",
+            "https://www.linkedin.com/in/tatsumi-oikawa-44a77414a/",
+            "https://play.google.com/store/apps/developer?id=Tatsumi+Oikawa"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://tatsumi6314.github.io/#website",
+          "url": "https://tatsumi6314.github.io/",
+          "name": "翁川 竜海のポートフォリオ",
+          "alternateName": "Tatsumi Oikawa Portfolio",
+          "inLanguage": "ja",
+          "publisher": { "@id": "https://tatsumi6314.github.io/#person" }
+        },
+        {
+          "@type": "ProfilePage",
+          "url": "https://tatsumi6314.github.io/",
+          "inLanguage": "ja",
+          "mainEntity": { "@id": "https://tatsumi6314.github.io/#person" }
+        }
+      ]
+    }
+  </script>
+
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/seahorse.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
@@ -17,11 +79,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
     rel="stylesheet" />
-  <title>Portfolios｜翁川 竜海</title>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <h1>翁川 竜海 (Tatsumi Oikawa)</h1>
+    <p>Web・モバイルアプリを開発するソフトウェアエンジニアのポートフォリオサイトです。コンテンツの表示にはJavaScriptを有効にしてください。</p>
+    <ul>
+      <li><a href="https://github.com/tatsumi6314">GitHub</a></li>
+      <li><a href="https://qiita.com/tatsumi6314">Qiita</a></li>
+      <li><a href="https://www.linkedin.com/in/tatsumi-oikawa-44a77414a/">LinkedIn</a></li>
+    </ul>
+  </noscript>
   <div id="root"></div>
 </body>
 
