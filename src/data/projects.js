@@ -17,6 +17,11 @@ export const projectCategories = [
         tech: ["PHP", "WordPress"],
         links: [{ type: "website", url: "https://naachan-journey.com" }],
       },
+      {
+        name: "ASTRA",
+        tech: ["TypeScript"],
+        links: [{ type: "website", url: "https://astra-game.net/" }],
+      },
     ],
   },
   {
